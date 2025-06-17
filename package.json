@@ -4,7 +4,8 @@
   "type": "module",
   "private": false,
   "scripts": {
-    "lexgen": "lex gen-server ./src/lexicon ./lexicons/*"
+    "lexgen": "lex gen-server ./src/lexicon ./lexicons/**/* ./lexicons/*",
+    "pkl:gen": "tsx ./scripts/pkl.ts"
   },
   "devDependencies": {
     "@types/bun": "latest"
@@ -21,6 +22,9 @@
     "@atproto/oauth-client-node": "^0.2.16",
     "@atproto/sync": "^0.1.20",
     "@atproto/syntax": "^0.4.0",
-    "@atproto/xrpc-server": "^0.7.15"
+    "@atproto/xrpc-server": "^0.7.15",
+    "@pkl-community/pkl": "^0.28.2",
+    "tsx": "^4.20.3",
+    "zx": "^8.5.5"
   }
 }

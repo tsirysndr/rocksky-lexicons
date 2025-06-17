@@ -9,6 +9,7 @@ bun install
 To generate typescript from lexicons:
 
 ```bash
+bun run pkl:gen
 bun run lexgen
 ```
 
